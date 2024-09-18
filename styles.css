@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Norse";
+  src: url("./Norse-Bold.otf");
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px 0 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --heading-text: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+}
+
+.root {
+  display: flex;
+}
+
+.left {
+  height: 100vh;
+  flex: 1;
+  position: relative;
+}
+
+.photo-credit {
+  position: absolute;
+  font-size: 1.4rem;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  color: white;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.odin-logo {
+  top: 20%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 100%;
+  font-family: "Norse";
+  text-align: center;
+  font-size: 12rem;
+}
+
+[src="halie-west-25xggax4bSA-unsplash.jpg"] {
+  height: 100vh;
+}
+
+.odin-logo > img {
+  height: 12rem;
+}
+
+.right {
+  flex: 3 1 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #eee;
+}
+
+.top-right {
+  font-size: var(--heading-text);
+  padding: 0 20% 0 40px;
+}
+
+.form-element {
+  padding: 0 20% 0 40px;
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-element > form > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 0.5px solid #e5e7eb;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 4px;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border: 0.5px solid blue;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.397);
+}
+
+#password:invalid,
+#confirm-password:invalid {
+  border: 0.5px solid red;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  padding: 30px 0;
+  font-size: var(--heading-text);
+}
+
+button {
+  margin: 30px;
+  background-color: rgb(5, 61, 17);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px #eee;
+}
+
+button:hover {
+  background-color: rgb(6, 82, 22);
+  cursor: pointer;
+}
+
+p {
+  padding-left: 40px;
+}
+
+p > a {
+  text-decoration: none;
+  color: rgb(6, 82, 22);
+}
